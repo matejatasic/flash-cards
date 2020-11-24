@@ -4,8 +4,6 @@ const answerInput = document.getElementById('answerInput');
 const submitBtn = document.getElementById('submitBtn');
 const warningDiv = document.getElementById('warningDiv');
 const outputDiv = document.getElementById('outputDiv');
-let showOrHideBtn;
-
 
 //Classes
 class FlashCard {
@@ -47,8 +45,6 @@ class UI {
             </div>
         `;
         outputDiv.innerHTML += html;
-        
-        id++;
     }
 
     static showOrHide(e) {
