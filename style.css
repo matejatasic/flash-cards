@@ -123,3 +123,21 @@ body {
     color: white;
     cursor: pointer;
 }
+
+/* Design for smaller devices */
+@media (max-width: 700px) {
+    .card {
+        width: 100%;
+    }
+
+    #outputDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .flash {
+        width: 100%;
+        margin: 1rem auto;
+    }
+}
