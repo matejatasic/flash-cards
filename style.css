@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(247, 111, 61);
+    --secondary-color: rgb(63, 146, 139); 
+}
+
+body {
+    background: rgba(128, 128, 128, 0.507);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 4rem auto;
+}
+
+.card {
+    width: 60%;
+    margin: 10rem auto;
+    padding: 1.2rem;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+}
+
+#questionInput, #answerInput {
+    margin: 0.5rem 0 1rem 0;
+    width: 100%;
+    height: 5rem;
+    font-size: 1.3rem;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+}
+
+#warningDiv {
+    display: none;
+    border: 1px solid rgba(223, 89, 111, 0.76);
+    border-radius: 5px;
+    background-color: rgba(223, 89, 111, 0.548);
+    width: 60%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+#submitBtn {
+    border: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 50%;
+    transition: background 0.5s;
+}
+
+#submitBtn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+}
+
+#submitBtn:focus,
+.editBtn:focus,
+.deleteBtn:focus {
+    outline: none;
+}
+
+#outputDiv {
+    display: inline-flex;
+    justify-content: start;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.flash {
+    border: 1px solid var(--main-color);
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    width: 30%;
+    padding: 1rem;
+}
+
+.editBtn, .deleteBtn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+.flash h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.flash h5 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.editBtn {
+    border: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+}
+
+.deleteBtn {
+    border: 3px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.editBtn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
